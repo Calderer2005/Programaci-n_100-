@@ -51,21 +51,37 @@ public class Metodos {
         */
         
         //EJERCICIO 3
-        
-        System.out.print("1] Calcular factorial \n2] Calcular potencia \n >");
+        /*
+        System.out.print("1] Calcular factorial \n2] Calcular potencia \n > ");
         int op = sc.nextInt();
         
         if(op == 1){
             
-            System.out.print("Introduzca un número: \n>");
-        
+            System.out.print("Introduzca un número: \n > ");         
             int n = sc.nextInt();
-        
+            
+            int f = n;          
+            f = calcularFactorial(f);
+            
+            System.out.println("El factorial de "+n+" es : "+f);
+            
         }else if(op == 2){
             
+            System.out.print("Introduzca la base : \n > ");
+            int b = sc.nextInt();
+            
+            System.out.print("Introduzca el exponente : \n > ");
+            int a = sc.nextInt();
+            
+            int p = 0 ;
+            p = calcularPotencia(b,a);
+            
+            System.out.println("La potencia de base "+b+" y exponente "+a+" es : "+p);
+                    
         }else{
             System.out.println("No era una opción");
         }
+        */
         
         /*
         //EJERCICIO 4
@@ -81,10 +97,12 @@ public class Metodos {
         int num = sc.nextInt();
         num = numPrimo(num);
         */
+        
+        //EJERCICO 6
+        
     }
-    public static int 
-    /*EJERCICIO 1
     
+    /*EJERCICIO 1
     public static int valorMax(int[] arr, int max){
         for(int i = 0; i<arr.length; i++){
             if(arr[i]>=max){
@@ -114,7 +132,26 @@ public class Metodos {
         return arr;
     }
     */
-    
+    /*EJERCICIO 3
+    public static int calcularFactorial (int n){
+        
+        int s = 1;
+        for(int i = n; i >= 1; i--){
+           s *= i;
+        }
+        
+        return s;
+    }
+    public static int calcularPotencia (int b, int a){
+        int p = 1;
+        
+        for(int e = a ; e >= 1 ; e--){
+            p *=b;
+        }
+        
+        return p;
+    }
+    */
     /*EJERCICIO 4
     public static int numFibonacci(int n){
         int a = 1;
